@@ -245,3 +245,38 @@ ul.small-list {
         height: auto;
     }
 }
+
+// Pills Nav
+
+.pills-nav {
+
+    .nav-item a {
+        font-family: 'Cerebri Sans', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: normal;
+
+        color: $black;
+
+        &:active,
+        &.active,
+        &:hover {
+            color: $green;
+
+            &:after {
+                background: $green;
+                content: '';
+                display: block;
+                height: 4px;
+                margin: 0.5rem 0;
+                width: 64px;
+
+                @media (min-width: 992px) {
+                    margin: 0.5rem auto;
+                }
+            }
+        }
+    }
+}
